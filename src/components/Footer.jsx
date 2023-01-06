@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="py-5 md:flex items-center justify-between p-5">
-        <ul className="flex flex-row justify-between gap-10 text-lg font-bold text-[#002A48] ">
+        <ul className="flex flex-row justify-between gap-5 md:gap-8 text-lg font-semibold text-[#002A48] ">
           <li>Home</li>
           <li>Category</li>
           <li>About</li>
