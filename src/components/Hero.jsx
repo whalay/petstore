@@ -6,8 +6,8 @@ import { ReactComponent as Play } from "../assets/images/play.svg";
 
 const Hero = () => {
   return (
-    <div className="h-full w-screen bg-[#FCEED5]   flex flex-col gap-10">
-      <div className="flex p-5 flex-col gap-y-3">
+    <div className="h-full w-screen bg-[#FCEED5]   flex flex-col md:flex-row gap-10">
+      <div className="flex p-5  basis-2/5 flex-col gap-y-3">
         <h1 className="text-3xl text-[#002A48] font-bold">One more friend</h1>
         <h2 className="text-xl text-[#002A48] font-semibold">
           Thousands more fun!
@@ -30,12 +30,12 @@ const Hero = () => {
           </button>
         </div>
       </div>
-    <div className="h-full">
-    <div className="bg-[url('src/assets/images/herorec.svg')] bg-cover h-96">
+    <div className="h-full basis-3/5">
+    <div className="bg-[url('src/assets/images/herorec.svg')] bg-cover h-96 flex justify-center">
         {/* <Herorec className="absolute z-5" /> */}
         {/* <Herorec2 className="absolute z-0" /> */}
         {/* <Herorec className="absolute z-5" /> */}
-        <HeroImg className="z-10 absolute" />
+        <HeroImg className="z-10 absolute  text-center " />
       </div>
     </div>
     </div>

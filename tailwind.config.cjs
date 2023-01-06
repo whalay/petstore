@@ -7,7 +7,9 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: {
-                'herorec': "url('src/assets/images/herorec.svg')"
+                'herorec': "url('src/assets/images/herorec.svg')",
+                'bannerb': "url('src/assets/images/bannerb1.svg')",
+                'banner': "url('src/assets/images/bannerb.svg')"
             }
         },
     },

@@ -1,16 +1,23 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
-import Product from '../components/Product'
+import React from "react";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import Product from "../components/Product";
+import Cart from "../components/cart/Cart";
+import Banner from "../components/Banner";
+import Blog from "../components/Blog";
+import Footer from "../components/Footer";
 
-const Homepage = () => {
+const Homepage = ({onShowCart}) => {
   return (
     <div>
-        <Navbar />
-        <Hero />
-        <Product />
+      <Navbar onShowCart={onShowCart}/>
+      <Hero />
+      <Product />
+      <Banner />
+      <Blog />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Homepage
+export default Homepage;
