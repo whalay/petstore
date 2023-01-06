@@ -17,8 +17,8 @@ const ProductCard = ({ image, age, name, price, gene, id, amount }) => {
     });
   };
   return (
-    <div>
-      <div className=" border rounded-2xl p-2  drop-shadow-xl">
+    <div className="">
+      <div className=" border rounded-2xl p-3  shadow-2xl flex   gap-4 md:flex-col">
         <div>
           <Link to={`product/${id}`}>
             <img
