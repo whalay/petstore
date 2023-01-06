@@ -31,7 +31,7 @@ const Hero = () => {
         </div>
       </div>
     <div className="h-full basis-3/5">
-    <div className="bg-[url('src/assets/images/herorec.svg')] bg-cover h-96 flex justify-center">
+    <div className="bg-herorec bg-cover h-96 flex justify-center">
         {/* <Herorec className="absolute z-5" /> */}
         {/* <Herorec2 className="absolute z-0" /> */}
         {/* <Herorec className="absolute z-5" /> */}

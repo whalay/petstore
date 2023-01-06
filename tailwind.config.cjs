@@ -8,7 +8,7 @@ module.exports = {
         extend: {
             backgroundImage: {
                 'herorec': "url('src/assets/images/herorec.svg')",
-                'bannerb': "url('src/assets/images/bannerb1.svg')",
+                'bannerb': "url('src/assets/images/bann.png')",
                 'banner': "url('src/assets/images/bannerb.svg')"
             }
         },

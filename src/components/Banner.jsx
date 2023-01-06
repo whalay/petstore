@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactComponent as Play } from "../assets/images/play.svg";
 import horizontal from "../assets/images/horizontal.svg";
-import vertical from "../assets/images/vertical.svg";
+
 
 const Banner = () => {
   return (
@@ -28,7 +28,7 @@ const Banner = () => {
         </div>
       </div>
       <div className=" w-full md:bg-bg-[#002A48] z-10 flex justify-center">
-        <img src={vertical} alt="" className=" object-fill md:h-[73vh]" />
+        <img src={horizontal} alt="" className=" object-fill md:h-[73vh]" />
    
       </div>
     </div>
