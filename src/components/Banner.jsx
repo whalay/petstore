@@ -5,8 +5,8 @@ import horizontal from "../assets/images/horizontal.svg";
 
 const Banner = () => {
   return (
-    <div className=" bg-bannerb  bg-contain bg-no-repeat md:bg-none md:h-[73vh]  bg-[#002A48] m-5  flex flex-col md:flex-row-reverse items-center text-center justify-center md:text-right   rounded-xl">
-      <div className=" md:bg-banner bg-no-repeat bg-cover w-full  flex p-5 md:h-[73vh]  justify-center  text-center md:text-right basis-[100%] flex-col gap-y-3 z-50">
+    <div className=" bg-[url('src/assets/images/bann.png')]  bg-contain bg-no-repeat md:bg-none md:h-[73vh]  bg-[#002A48] m-5  flex flex-col md:flex-row-reverse items-center text-center justify-center md:text-right   rounded-xl">
+      <div className=" md:bg-[url('src/assets/images/ban.png')]  bg-no-repeat bg-cover w-full  flex p-5 md:h-[73vh]  justify-center  text-center md:text-right basis-[100%] flex-col gap-y-3 z-50">
         <h1 className="text-3xl text-[#002A48] font-bold">One more friend</h1>
         <h2 className="text-xl text-[#002A48] font-semibold">
           Thousands more fun!
