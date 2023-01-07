@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as HeroImg } from "../assets/images/herom.svg";
-import heroImage from "../assets/images/herop.png";
+import heroImage from "../assets/images/herom.svg";
 import { ReactComponent as Play } from "../assets/images/play.svg";
 
 const Hero = () => {

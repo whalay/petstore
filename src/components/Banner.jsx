@@ -17,18 +17,18 @@ const Banner = () => {
           can meet your needs!
         </p>
         <div className="flex gap-5  justify-end  ">
-          <span className="flex flex-row   justify-between gap-3 text-[#003459] border border-[#003459] py-2 px-7 rounded-3xl">
+          <span className="flex flex-row   justify-between gap-3 text-[#003459] border border-[#003459] py-2 px-2 md:px-7 rounded-3xl">
             {" "}
             <button className=" ">View intro</button>
             <Play className="border rounded-full border-[#003459]" />
           </span>
-          <button className="bg-[#003459] text-white border py-2 px-7 rounded-3xl">
+          <button className="bg-[#003459] text-white border py-2 px-2 md:px-7 rounded-3xl">
             Explore now
           </button>
         </div>
       </div>
       <div className=" w-full md:bg-bg-[#002A48] z-10 flex justify-center">
-        <img src={horizontal} alt="" className=" object-fill md:h-[73vh]" />
+        <img src="src/assets/images/horizontal.svg" alt="" className=" object-fill md:h-[73vh]" />
    
       </div>
     </div>
