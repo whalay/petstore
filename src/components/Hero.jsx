@@ -29,8 +29,7 @@ const Hero = () => {
       </div>
       <div className="h-full basis-3/5">
         <div className="bg-[url('src/assets/images/herorec.svg')] bg-cover h-96 flex justify-center">
-          <img src={heroImage} alt="" className="z-10 absolute  text-center " />
-          {/* <HeroImg className="z-10 absolute  text-center " /> */}
+          <HeroImg className="z-10 absolute  text-center " />
         </div>
       </div>
     </div>
