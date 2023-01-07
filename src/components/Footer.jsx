@@ -3,6 +3,7 @@ import { ReactComponent as Facebook } from "../assets/images/socials/facebook.sv
 import { ReactComponent as Instagram } from "../assets/images/socials/instagram.svg";
 import { ReactComponent as Twitter } from "../assets/images/socials/twitter.svg";
 import { ReactComponent as Youtube } from "../assets/images/socials/youtube.svg";
+import { ReactComponent as Logo } from "../assets/images/logo.svg";
 
 const Footer = () => {
   return (
@@ -41,6 +42,14 @@ const Footer = () => {
           <Instagram />
           <Youtube />
         </div>
+      </div>
+      <hr className="pb-4"/>
+      <div className="flex justify-center flex-col md:flex-row md:justify-between items-center gap-y-3 p-5  ">
+        {" "}
+        <Logo />
+        <p>Privacy Policy</p>
+        <p>Terms of Service</p>
+        <p>© 2022 Monito. All rights reserved.</p>
       </div>
     </div>
   );

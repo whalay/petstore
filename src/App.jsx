@@ -1,10 +1,13 @@
 import { useState } from "react";
-import { Outlet } from "react-router-dom";
 import Cart from "./components/cart/Cart";
 import Homepage from "./Pages/Homepage";
 import ProductDetail from "./Pages/ProductDetail";
 import CartProvider from "./store/CartProvider";
+import ErrorPage from "./components/error-page";
+
 import { Fragment } from "react";
+import { Routes, Route, Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -18,9 +21,12 @@ function App() {
   };
   return (
     <Fragment>
+      <Navbar onShowCart={showCartHandler} />
       {cartIsShown && <Cart onCloseCart={hideCartHandler} />}
-      <Homepage onShowCart={showCartHandler} />
-      <Outlet />
+      <Routes>
+        <Route exact path="/" element={<Homepage />} />
+        <Route path="product/:id" element={<ProductDetail />} />
+      </Routes>
     </Fragment>
   );
 }

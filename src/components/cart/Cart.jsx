@@ -19,8 +19,9 @@ const Cart = (props) => {
 
   const cartItems = (
     <ul className="m-0 p-0 max-h-80 overflow-auto">
-      {cartCtx.items.map((item) => (
+      {cartCtx.items.map((item, key) => (
         <CartItem
+          key={item.id}
           name={item.name}
           price={item.price}
           amount={item.amount}

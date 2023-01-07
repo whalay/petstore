@@ -7,10 +7,9 @@ import Banner from "../components/Banner";
 import Blog from "../components/Blog";
 import Footer from "../components/Footer";
 
-const Homepage = ({onShowCart}) => {
+const Homepage = (props) => {
   return (
     <div>
-      <Navbar onShowCart={onShowCart}/>
       <Hero />
       <Product />
       <Banner />

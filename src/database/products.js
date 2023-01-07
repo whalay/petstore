@@ -7,7 +7,7 @@ export const Products = [
     id: '1',
     image: dog1,
     name: "Pomeranian White",
-    gene: "male",
+    gene: "Male",
     age: "2 years",
     price: 2.00,
     // amount:2
@@ -16,7 +16,7 @@ export const Products = [
     id: '2',
     image: dog2,
     name: "Pomeranian White",
-    gene: "male",
+    gene: "Male",
     age: "2 years",
     price: 2.00,
     // amount:3
@@ -25,7 +25,7 @@ export const Products = [
     id: '3',
     image: dog2,
     name: "Pomeranian White",
-    gene: "male",
+    gene: "Male",
     age: "2 years",
     price: 2.00,
     // amount:3

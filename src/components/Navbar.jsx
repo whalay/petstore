@@ -21,10 +21,10 @@ const Navbar = ({ onShowCart }) => {
   return (
     <div className="flex justify-between items-center p-5 bg-[#FCEED5]">
       <Hamburger className="md:hidden" onClick={navHandler} />
-      {/* <Link to="/">
+      <Link to="/">
         <Logo />
-      </Link> */}
-      <img src={logo} alt="" />
+      </Link>
+      {/* <img src={logo} alt="" /> */}
       <Nav nav={nav} showNav={navHandler} closeNavbar={closeNavbar}/>
       <Search />
       <HeaderCartButton onClick={onShowCart}  />
