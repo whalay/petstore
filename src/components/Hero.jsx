@@ -18,14 +18,14 @@ const Hero = () => {
           can meet your needs!
         </p>
         <div className="flex gap-5">
-          <span className="flex flex-row items-center justify-between gap-3 text-[#003459] border border-[#003459] py-2 px-7 rounded-3xl">
+          <span className="flex flex-row items-center justify-between gap-3 text-[#003459] border border-[#003459] py-2  px-3 md:px-7 rounded-3xl">
             {" "}
             <button className=" ">
               View intro
             </button>
             <Play className='border rounded-full border-[#003459]'/>
           </span>
-          <button className="bg-[#003459] text-white border py-2 px-7 rounded-3xl">
+          <button className="bg-[#003459] text-white border py-2 px-3 md:px-7 rounded-3xl">
             Explore now
           </button>
         </div>
