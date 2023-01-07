@@ -19,7 +19,7 @@ const Nav = (props) => {
             <li>About</li>
             <li>Contact</li>
           </ul>
-          <Close />
+          <Close onClick={props.closeNavbar} className=""/>
           </div>
         </div>
       )}
