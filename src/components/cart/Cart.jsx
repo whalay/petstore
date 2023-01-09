@@ -33,7 +33,7 @@ const Cart = (props) => {
   );
 
   return (
-    <Modal className="p-5" onClick={props.onCloseCart}>
+    <Modal className="p-5 z-50" onClick={props.onCloseCart}>
       {cartItems}
       <div className="flex justify-between py-3">
         <span>Total Amount:</span>

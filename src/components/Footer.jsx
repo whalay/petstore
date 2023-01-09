@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { NavLinks } from "../database/NavLinks";
 import { ReactComponent as Facebook } from "../assets/images/socials/facebook.svg";
 import { ReactComponent as Instagram } from "../assets/images/socials/instagram.svg";
 import { ReactComponent as Twitter } from "../assets/images/socials/twitter.svg";
@@ -30,11 +32,19 @@ const Footer = () => {
       </div>
       <div className="py-5 md:flex items-center justify-between p-1">
         <ul className="flex flex-row justify-between gap-3 md:gap-8 text-lg font-semibold text-[#002A48]">
+          {NavLinks.map((nav) => (
+            <Link to={nav.url}>
+              {" "}
+              <li>{nav.name}</li>
+            </Link>
+          ))}
+        </ul>
+        {/* <ul className="flex flex-row justify-between gap-3 md:gap-8 text-lg font-semibold text-[#002A48]">
           <li>Home</li>
           <li>Category</li>
           <li>About</li>
           <li>Contact</li>
-        </ul>
+        </ul> */}
         <div className="flex flex-row justify-center gap-8 py-5">
           {" "}
           <Facebook />
@@ -43,7 +53,7 @@ const Footer = () => {
           <Youtube />
         </div>
       </div>
-      <hr className="pb-4"/>
+      <hr className="pb-4" />
       <div className="flex justify-center flex-col md:flex-row md:justify-between items-center gap-y-3 p-5  ">
         {" "}
         <Logo />

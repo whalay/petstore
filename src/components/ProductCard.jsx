@@ -13,7 +13,7 @@ const ProductCard = ({ image, age, name, price, gene, id, amount }) => {
       id: id,
       name: name,
       price: price,
-      amount:amount,
+      amount: 1,
     });
   };
   return (
@@ -30,7 +30,10 @@ const ProductCard = ({ image, age, name, price, gene, id, amount }) => {
         </div>
 
         <div className="space-y-2">
-          <h1 className="text-md font-bold">{name}</h1>
+          <div className="flex justify-between gap-5">
+            <h1 className="text-md font-bold">{name}</h1>
+            <h3 className="text-md font-bold">{prices}</h3>
+          </div>
           <h3 className="text-[#667479] text-xm">
             Gene: <span className="font-medium">{gene}</span>{" "}
           </h3>
@@ -38,14 +41,14 @@ const ProductCard = ({ image, age, name, price, gene, id, amount }) => {
             Age: <span className="font-medium">{age}</span>
           </h3>
           <span className="flex items-center gap-9">
-            <h3 className="text-md font-bold">{prices}</h3>
-            {/* <button
+            {/* <h3 className="text-md font-bold">{prices}</h3> */}
+            <button
               onClick={addToCartHandler}
-              className="border px-1 pt-1 font-bold rounded-2xl bg-slate-600"
+              className="border px-2 py-2 font-bold rounded-2xl bg-[#FCEED5] hover:bg-[#003459] hover:text-white"
             >
               Add to cart
-            </button> */}
-            <ProductForm onAddToCart={addToCartHandler}/>
+            </button>
+            {/* <ProductForm onAddToCart={addToCartHandler}/> */}
           </span>
         </div>
       </div>
