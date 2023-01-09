@@ -15,7 +15,7 @@ const Nav = (props) => {
         ))}
       </ul>
       {props.nav && (
-        <div className="md:hidden  top-0 left-0 bg-white h-full w-96 fixed  z-50 ">
+        <div className="md:hidden  top-0 left-0 bg-white h-full w-96 fixed  z-50 transition ease-in-out duration-700 ">
           <div className="flex justify-between p-10">
             <ul className="md:hidden flex flex-col justify-between gap-y-8 text-lg font-bold text-[#002A48] ">
               {NavLinks.map((nav) => (

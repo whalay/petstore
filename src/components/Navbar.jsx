@@ -20,7 +20,7 @@ const Navbar = ({ onShowCart }) => {
   }
   return (
     <div className="flex justify-between items-center p-5 bg-[#FCEED5]">
-      <Hamburger className="md:hidden" onClick={navHandler} />
+      <Hamburger className="md:hidden " onClick={navHandler} />
       <Link to="/">
         <Logo />
       </Link>

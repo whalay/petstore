@@ -27,11 +27,11 @@ const ProductDetail = () => {
 
   return (
     <Fragment>
-      <div className="flex ">
-        <div className="basis-2/5">
+      <div className="flex flex-col md:flex-row">
+        <div className=" md:basis-2/5">
           <img src={detail.image} alt="" className="object-fill w-full " />
         </div>
-        <div className="p-10 space-y-5 basis-3/5">
+        <div className="p-10 space-y-5 md:basis-3/5">
           <div className="flex justify-between gap-5">
             <h1 className="text-2xl font-bold">{detail.name}</h1>
             <h2 className="text-xl font-semibold">{price}</h2>
@@ -42,12 +42,14 @@ const ProductDetail = () => {
             <button >-</button>
           </div> */}
           {/* <ProductForm onAddToCart={addToCartHandler} /> */}
+          <div className="md:flex justify-end">
           <button
             onClick={addToCart}
-            className="border p-2 bg-black w-full text-white text-center text-2xl font-semibold"
+            className="border p-2 bg-black w-full md:w-1/4  text-white text-center text-2xl font-semibold"
           >
             Add to cart
           </button>
+          </div>
 
           <hr className="py-2" />
           <h2 className="text-xl font-semibold border-b">information</h2>

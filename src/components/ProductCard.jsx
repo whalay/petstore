@@ -30,7 +30,7 @@ const ProductCard = ({ image, age, name, price, gene, id, amount }) => {
         </div>
 
         <div className="space-y-2">
-          <div className="flex justify-between gap-5">
+          <div className="flex flex-wrap justify-between gap-5">
             <h1 className="text-md font-bold">{name}</h1>
             <h3 className="text-md font-bold">{prices}</h3>
           </div>
